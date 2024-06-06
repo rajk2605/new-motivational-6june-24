@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> New MM App By Raj </title>
+	<style>
+		*{font-size:40px; font-family: Cambria;}
+		body{background-color: azure;}
+	</style>
+
+</head>
+
+<body>
+<center>
+	<h1> New Motivational Msg Wallah </h1>
+	<h2 id="msg"/>
+ 
+<script>
+
+setInterval(Messages, 2000)
+//const myTimeout = setTimeout(Messages, 2000);
+function Messages()
+{			
+	let msg = document.getElementById("msg");		
+	let messages = ["m1", "m2", "m3","m4","m5","m6","m7"];
+	let r = parseInt(Math.random()* messages.length);
+	msg.innerHTML = r + " " + messages[r];
+}
+
+
+
+</script>
+</center>
+</body>
+</html>
